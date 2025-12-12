@@ -8,20 +8,38 @@
 	<title>Ellen Walters Music</title>
 </head>
 <body>
-<main>
-	<div id="navbar" class="open-sans w400">
-		<a href="https://ellenwaltersmusic.com" class="w700 montserrat" style="display: flex; align-items: center; font-size: 1.5em; padding: 0; color: light-dark(var(--light-primary), var(--dark-primary));"><img id="nav-logo" src="/leighcellopic.jpg" style="height: 1.5em; margin-right: 1em;"> Ellen Walters Music</a>
+	<div id="navbar">
+		<a href="https://ellenwaltersmusic.com">
+			<img id="nav-logo" src="/leighcellopic.jpg" alt="drawing of a cello">
+			Ellen Walters Music
+		</a>
 		<a href="https://ellenwaltersmusic.com" class="active right">Home</a>
 		<a href="/about">About</a>
-		<a href="/testimonials">Testimonials</a>
-		<a href="javascript:showSearch();" style="height: 100%;">
-			<img src="src/img/search.png" height="50%">
+		<a id="search">
+			<img src="src/img/search.png" alt="search icon">
 		</a>
-		<a href="javascript:void(0);" class="icon" onclick="openNav()" style="height: 100%;">
-			<img src="src/img/menu.png" height="50%">
+		<a id="menu" class="icon right">
+			<img src="src/img/menu.png" alt="menu icon">
 		</a>
 	</div>
-</main>
-<script type="module" src="/src/main.ts"></script>
+	<main>
+		<section id="hero">
+			<div id="hero-content">
+				<h1 id="hero-header">Ellen Walters Music</h1>
+				<h2 id="hero-subtitle">Cello lessons and performance, music administration, violin and theory lessons</h2>
+			</div>
+		</section>
+		<section id="section1">
+			<div id="section1-content">
+				<h1>Kia ora,</h1>
+				<p>I am a musician and music teacher residing in Ōtepoti Dunedin. With more than five years teaching experience including cello, violin and theory lessons, I love helping people connect with music, finding out what it feels like to play and making lessons work for them.</p>
+				<p>MusB (Hons), BA, AIRMT</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		Get in touch to find out more! • Phone: 027 430 7739 • Email: <a href="mailto:ellen.walters@gmail.com">ellen.walters@gmail.com</a> • North East Valley, Dunedin, New Zealand
+	</footer>
+	<script type="module" src="/src/main.ts"></script>
 </body>
 </html>

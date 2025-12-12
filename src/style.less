@@ -1,14 +1,15 @@
 @import url('fonts.less');
 
+@light-primary: #212121;
+@dark-primary: whitesmoke;
+@light-bg: whitesmoke;
+@dark-bg: #212121;
+@light-bg-secondary: #f6f6f6;
+@dark-bg-secondary: #202020;
+@red-bg: rgb(34,4,0);
+
 :root {
   color-scheme: light dark;
-  --light-primary: #212121;
-  --dark-primary: whitesmoke;
-  --light-bg: whitesmoke;
-  --dark-bg: #212121;
-  --light-bg-secondary: #f6f6f6;
-  --dark-bg-secondary: #202020;
-  --red-bg: rgb(34,4,0);
 }
 
 html, body {
@@ -16,17 +17,24 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background: light-dark(var(--light-bg), var(--dark-bg));
+  background: @light-bg;
+  @media (prefers-color-scheme: dark) {
+    background: @dark-bg;
+  }
 
   @media (max-width: 1200px) { font-size-adjust: 0.8; }
   @media (max-width: 1199px) and (min-width: 810px) { font-size-adjust: 0.5; }
   @media (max-width: 809px) { font-size-adjust: 0.3; }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -37,38 +45,67 @@ br {
   user-select: none;
 }
 
+a {
+  color: @light-primary;
+  @media (prefers-color-scheme: dark) {
+    color: @dark-primary;
+  }
+}
+
 #navbar {
   overflow: hidden;
-  background-color: light-dark(var(--light-bg), var(--dark-bg));
+  background: @light-bg;
+  @media (prefers-color-scheme: dark) {
+    background: @dark-bg;
+  }
   position: fixed;
   width: calc(100% - 2em);
   height: 3.5em;
   padding: 0 1em 0 1em;
   display: flex;
   gap: 16px;
+  align-items: center;
+  z-index: 999;
 
   .icon {
     display: none;
   }
 
+  #nav-logo {
+    margin-right: 1em;
+  }
+
   a {
     float: left;
     display: flex;
-    color: light-dark(var(--light-primary), var(--dark-primary));
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     user-select: none;
     align-items: center;
+    height: 1.5em;
+    cursor: pointer;
 
     &:hover {
-      color: light-dark(#000,#fff);
+      color: black;
+      @media (prefers-color-scheme: dark) {
+        color: white;
+      }
     }
     &.active {
       font-weight: bold;
     }
     &.right {
       margin-left: auto;
+    }
+    &:first-child {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+
+    img {
+      height: 1.5em;
     }
 
     @media screen and (max-width: 600px) {
@@ -87,7 +124,7 @@ br {
   }
 }
 
-.hero {
+section#hero {
   width: 100vw;
   height: 75vh;
   display: grid;
@@ -98,4 +135,84 @@ br {
   overflow: hidden;
   color: white;
   background-color: rgba(43, 5, 0, 0.3);
+
+  #hero-content {
+    border: 0.25em solid @light-bg;
+    border-radius: 1em;
+    display: grid;
+    justify-items: center;
+    background-color: fade(@dark-bg, 50%);
+    backdrop-filter: blur(2px);
+
+    #hero-header {
+      font-weight: 700;
+      font-size: 4.5em;
+      margin: 0.25em;
+    }
+
+    #hero-subtitle {
+      font-weight: 400;
+      font-size: 2.5em;
+      max-width: 60vw;
+      margin-top: 0;
+      margin-bottom: 0.75em;
+    }
+  }
+
+  &:before {
+    background: center / cover no-repeat url('/cellotrial.jpg');
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+section:not(#hero) {
+  &:nth-child(even) {
+    background: @light-bg;
+    @media (prefers-color-scheme: dark) {
+      background: @dark-bg;
+    }
+  }
+  &:nth-child(odd) {
+    background: @light-bg-secondary;
+    @media (prefers-color-scheme: dark) {
+      background: @dark-bg-secondary;
+    }
+  }
+
+  color: @light-primary;
+  @media (prefers-color-scheme: dark) {
+    color: @dark-primary;
+  }
+  width: 100%;
+  height: 40vh;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  overflow: hidden;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  p {
+    max-width: 50vw;
+    font-size: 1.025em;
+    line-height: 2em;
+  }
+}
+
+footer {
+  padding: 1em 0 1em 0;
+  color: @dark-primary;
+  background: @red-bg;
+  text-align: center;
 }
