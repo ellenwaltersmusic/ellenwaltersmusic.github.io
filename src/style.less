@@ -85,7 +85,7 @@ a {
   display: flex;
   gap: 16px;
   align-items: center;
-  z-index: 999;
+  z-index: 998;
 
   .icon {
     display: none;
@@ -141,6 +141,47 @@ a {
       img:not(#nav-logo) {
         filter: brightness(13%);
       }
+    }
+  }
+}
+
+dialog#search-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  border: none;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: none;
+
+  &[open] {
+    display: flex;
+  }
+
+  &::backdrop {
+    background: fade(@dark-bg, 15%);
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 0.75em;
+
+    input[type='search'] {
+      pointer-events: all;
+      height: 1.5em;
+    }
+
+    img {
+      pointer-events: all;
+      width: 2em;
+      cursor: pointer;
     }
   }
 }
@@ -260,4 +301,8 @@ footer {
   color: @dark-primary;
   background: @red-bg;
   text-align: center;
+
+  a {
+    color: @dark-primary;
+  }
 }

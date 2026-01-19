@@ -8,18 +8,27 @@
 	<title>Ellen Walters Music - Template</title>
 </head>
 <body>
+	<dialog id="search-modal">
+		<form method="dialog">
+			<img src="src/img/search.png" alt="search icon" draggable="false">
+			<label for="site-search">
+				<input type="search" name="site-search" id="site-search" placeholder="Search this site" autocomplete="off">
+			</label>
+			<img id="search-close" src="src/img/cross.png" alt="close search icon" draggable="false">
+		</form>
+	</dialog>
 	<div id="navbar">
 		<a href=".">
-			<img id="nav-logo" src="/leighcellopic.jpg" alt="drawing of a cello">
+			<img id="nav-logo" src="/leighcellopic.jpg" alt="drawing of a cello" draggable="false">
 			Ellen Walters Music
 		</a>
 		<a href="." class="right">Home</a>
 		<a href="/about">About</a>
 		<a id="search">
-			<img src="src/img/search.png" alt="search icon">
+			<img src="src/img/search.png" alt="search icon" draggable="false">
 		</a>
 		<a id="menu" class="icon right">
-			<img src="src/img/menu.png" alt="menu icon">
+			<img src="src/img/menu.png" alt="menu icon" draggable="false">
 		</a>
 	</div>
 	<main>

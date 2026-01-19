@@ -1,9 +1,19 @@
 const searchButton: HTMLAnchorElement | null = document.getElementById("search") as HTMLAnchorElement;
+const searchDialog: HTMLDialogElement | null = document.getElementById("search-modal") as HTMLDialogElement;
+const searchCloseButton: HTMLImageElement | null = document.getElementById("search-close") as HTMLImageElement;
 const menuButton: HTMLAnchorElement | null = document.getElementById("menu") as HTMLAnchorElement;
 
-if (searchButton) {
+if (searchButton && searchDialog) {
     searchButton.onclick = () => {
-        console.log("open search menu");
+        searchDialog.showModal();
+    }
+}
+
+if (searchDialog && searchCloseButton) {
+    searchDialog.onclick = (e) => {
+        if(e.target === searchDialog || e.target === searchCloseButton) {
+            searchDialog.close();
+        }
     }
 }
 
