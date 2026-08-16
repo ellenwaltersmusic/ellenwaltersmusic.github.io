@@ -2,27 +2,37 @@
 
 ---
 # Music Lessons
-I teach from Kaikorai Dunedin, with times available during the day and evenings, weekends on enquiry. Pricing available on request.
+I teach from home in Kaikorai, Dunedin. Get in touch about lesson availability across the week.
 
 Some instrument hire options available.
 
 Scratch the itch and come try it out! I hope to provide a fun, comfortable and encouraging environment for the learner and their aims, supported by a strong technical foundation.
+
 Beginner and beyond, all ages.
 
 ---
-# Work
-- Mainly cello teaching, with growing violin students. Cello teacher at Dunedin Rudolf Steiner School, past teacher at Saturday Morning Music (George Street) and     John McGlashan College.
+# Roles
+- Private teaching - mainly cello, with growing violin students. I am also the cello teacher at Dunedin Rudolf Steiner School.
+- Dunedin Youth Orchestra Coordinator
 - Dunedin Symphony Orchestra Academy Conductor and orchestra administration
-- Chamber Music New Zealand: Dunedin Concert Manager and
-- NZCT Chamber Music Contest Otago District Co-ordinator
+- NZCT Chamber Music Contest Otago District Co-ordinator (Chamber Music New Zealand)
+- Dunedin Children's Choir Choir Supervisor / Community Liaison
+- Institute of Registered Music Teachers Otago Branch secretary (voluntary)
+ 
+---
+# Past roles
+- Cello teacher at Saturday Morning Music (George Street) and John McGlashan College
+- Chamber Music New Zealand: Dunedin Concert Manager
+- Cellists of Otago committee secretary (voluntary)
 
 ---
 # Performance
-- Dunedin Symphony Orchestra
+- Dunedin Symphony Orchestra cellist, including schools tour 2025/6
 - Ōwheo Quartet
   - 2022 - Royal Society Te Āparangi Ōtepoti and Te Whanganui-a-Tara Awards Ceremonies
   - 2023 - present Weddings, recording sessions
 - Waitaki Summer Music Camp 2025, 2026 (assistant tutor, cellos)
+- Available for recordings
 - Dunedin Youth Orchestra
   - 2021 Young Musicians' Award and solo with DYO and CYO 2022
   - 2019 Fashion iD small orchestra and recording session
@@ -32,8 +42,8 @@ Beginner and beyond, all ages.
   - 2022 Eyegum Scenic Tour with Mirror Ritual
   - 2022 do what you want/my life in dreams, Breakneck Brain
   - 2021 Astronaut Single, Blue Whale EP
-- Cellists of Otago concerts and committee
-- Festival of Coulour Wānaka 2023: Colours of Grief
+- Cellists of Otago
+- Festival of Colour Wānaka 2023: Colours of Grief
 - NZ Secondary Schools Symphony Orchestra 2016
 
 ---
