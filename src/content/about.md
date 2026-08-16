@@ -8,10 +8,10 @@ Some instrument hire options available.
 
 Scratch the itch and come try it out! I hope to provide a fun, comfortable and encouraging environment for the learner and their aims, supported by a strong technical foundation.
 
-Beginner and beyond, all ages.
+Beginner and beyond, for all ages.
 
 ---
-# Roles
+# Work
 - Private teaching - mainly cello, with growing violin students. I am also the cello teacher at Dunedin Rudolf Steiner School.
 - Dunedin Youth Orchestra Coordinator
 - Dunedin Symphony Orchestra Academy Conductor and orchestra administration
