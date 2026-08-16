@@ -12,7 +12,8 @@ Beginner and beyond, for all ages.
 
 ---
 # Work
-- Private teaching - mainly cello, with growing violin students. I am also the cello teacher at Dunedin Rudolf Steiner School.
+- Private teaching - mainly cello, with growing violin students. I am also the cello teacher at Dunedin
+  Rudolf Steiner School.
 - Dunedin Youth Orchestra Coordinator
 - Dunedin Symphony Orchestra Academy Conductor and orchestra administration
 - NZCT Chamber Music Contest Otago District Co-ordinator (Chamber Music New Zealand)
