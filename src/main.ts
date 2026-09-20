@@ -1,10 +1,3 @@
-import { renderRoute } from "./router";
-
-window.addEventListener("popstate", renderRoute);
-await renderRoute();
-
-//
-
 const searchButton: HTMLAnchorElement | null = document.getElementById(
   "search",
 ) as HTMLAnchorElement;

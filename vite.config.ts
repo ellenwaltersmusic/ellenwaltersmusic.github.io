@@ -1,16 +1,8 @@
 import { defineConfig } from "vite";
-import { viteStaticCopy } from "vite-plugin-static-copy";
+import { prerenderPlugin } from "./src/render/vite-plugin-prerender.mts";
+import { join } from "node:path";
 
 export default defineConfig({
   base: "/",
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        { src: "dist/index.html", dest: "", rename: "404.html" },
-        { src: "dist/index.html", dest: "", rename: "photos.html" },
-        { src: "dist/index.html", dest: "", rename: "about.html" },
-      ],
-      silent: true,
-    }),
-  ],
+  plugins: [prerenderPlugin(join(__dirname, "src/content"))],
 });
