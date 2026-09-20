@@ -7,8 +7,10 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         { src: "dist/index.html", dest: "", rename: "404.html" },
+        { src: "dist/index.html", dest: "", rename: "photos.html" },
         { src: "dist/index.html", dest: "", rename: "about.html" },
       ],
+      silent: true,
     }),
   ],
 });

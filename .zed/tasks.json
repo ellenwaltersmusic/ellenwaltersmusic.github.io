@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Run Dev",
+    "command": "bun run dev",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+  },
+  {
+    "label": "Run Build",
+    "command": "bun run build",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+  },
+  {
+    "label": "Run Preview",
+    "command": "bun run preview",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+  },
+]

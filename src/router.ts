@@ -4,9 +4,21 @@ import { marked } from "marked";
 export async function renderRoute() {
   let path = window.location.pathname.replace(/\/$/, "");
 
-  if (path === "" || path === "/") {
+  if (
+    path === "" ||
+    path === "/" ||
+    path === "/index.html" ||
+    path === "/index"
+  ) {
     path = "/index";
-    (document.getElementById("home") as HTMLAnchorElement).classList.add("active");
+    (document.getElementById("home") as HTMLAnchorElement).classList.add(
+      "active",
+    );
+  } else {
+    const navEl = document.getElementById(
+      path.replace("/", ""),
+    ) as HTMLAnchorElement;
+    if (navEl) navEl.classList.add("active");
   }
 
   if (!/^\/[a-zA-Z0-9_-]+$/.test(path)) {
@@ -14,9 +26,6 @@ export async function renderRoute() {
     await setupPage(md);
     return;
   }
-
-  if (path === "/about")
-    (document.getElementById("about") as HTMLAnchorElement).classList.add("active");
 
   const key = `./content${path}.md`;
 

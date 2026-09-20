@@ -1,7 +1,9 @@
 # About
 
 ---
+
 # Music Lessons
+
 I teach from home in Kaikorai, Dunedin. Get in touch about lesson availability across the week.
 
 Some instrument hire options available.
@@ -11,23 +13,29 @@ Scratch the itch and come try it out! I hope to provide a fun, comfortable and e
 Beginner and beyond, for all ages.
 
 ---
+
 # Work
+
 - Private teaching - mainly cello, with growing violin students. I am also the cello teacher at Dunedin
-    Rudolf Steiner School.
+  Rudolf Steiner School.
 - Dunedin Youth Orchestra Coordinator
 - Dunedin Symphony Orchestra Academy Conductor and orchestra administration
 - NZCT Chamber Music Contest Otago District Co-ordinator (Chamber Music New Zealand)
 - Dunedin Children's Choir Choir Supervisor / Community Liaison
 - Institute of Registered Music Teachers Otago Branch secretary (voluntary)
- 
+
 ---
+
 # Past roles
+
 - Cello teacher at Saturday Morning Music (George Street) and John McGlashan College
 - Chamber Music New Zealand: Dunedin Concert Manager
 - Cellists of Otago committee secretary (voluntary)
 
 ---
+
 # Performance
+
 - Dunedin Symphony Orchestra cellist, including schools tour 2025/6
 - Ōwheo Quartet
   - 2022 - Royal Society Te Āparangi Ōtepoti and Te Whanganui-a-Tara Awards Ceremonies
@@ -48,7 +56,9 @@ Beginner and beyond, for all ages.
 - NZ Secondary Schools Symphony Orchestra 2016
 
 ---
+
 # Education
+
 - Associate Member IRMT (Cello and Theory)
 - CSO Aspirations conducting course (2024)
 - Bachelor of Music First Class Honours (2021)
