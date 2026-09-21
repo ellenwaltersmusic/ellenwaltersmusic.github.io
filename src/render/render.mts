@@ -57,7 +57,10 @@ export async function renderPage(
 
   const navId = route === "/" ? "home" : (route.slice(1) as string);
   const navEl = document.getElementById(navId);
-  if (navEl) navEl.classList.add("active");
+  if (navEl) {
+    navEl.classList.add("active");
+    if (navEl.id != "home") document.title += ` - ${navEl.textContent}`;
+  }
 
   const photoEl = document.getElementById("gallery");
   if (photoEl && route === "/photos") {
