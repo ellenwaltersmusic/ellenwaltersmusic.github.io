@@ -11,10 +11,18 @@ const menuButton: HTMLAnchorElement | null = document.getElementById(
   "menu",
 ) as HTMLAnchorElement;
 
+const navClick = (e: KeyboardEvent) => {
+  if (e.target && (e.key === "Enter" || e.key === " ")) {
+    e.preventDefault();
+    (e.target as HTMLElement).click();
+  }
+};
+
 if (searchButton && searchDialog) {
   searchButton.onclick = () => {
     searchDialog.showModal();
   };
+  searchButton.onkeydown = navClick;
 }
 
 if (searchDialog && searchCloseButton) {
@@ -23,10 +31,12 @@ if (searchDialog && searchCloseButton) {
       searchDialog.close();
     }
   };
+  searchCloseButton.onkeydown = navClick;
 }
 
 if (menuButton) {
   menuButton.onclick = () => {
     console.log("open nav menu");
   };
+  menuButton.onkeydown = navClick;
 }

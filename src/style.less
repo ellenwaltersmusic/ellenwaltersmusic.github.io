@@ -71,6 +71,59 @@ main {
         display: flex;
         flex-direction: column;
         flex: 1;
+
+        #section1-content:has(#gallery) {
+            width: 100%;
+        }
+
+        #gallery {
+            width: 100%;
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(5, 1fr);
+
+            .img-container {
+                position: relative;
+                grid-column: span 2;
+                margin: 0;
+                border-radius: 0.5em;
+                outline: 0.25em solid var(--light-bg);
+                overflow: hidden;
+                /*cursor: pointer;*/
+
+                &:nth-child(4n + 1),
+                &:nth-child(4n + 4) {
+                    grid-column: span 3;
+                }
+
+                img {
+                    width: 100%;
+                    height: 50vh;
+                    object-fit: cover;
+
+                    display: block;
+                }
+
+                &:hover span {
+                    opacity: 1;
+                }
+
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: fit-content;
+                    text-align: center;
+                    background: rgba(0, 0, 0, 0.5);
+                    white-space: pre;
+                    backdrop-filter: blur(2px);
+                    padding: 2em 0 2em 0;
+                    opacity: 0;
+                    transition: opacity 200ms;
+                }
+            }
+        }
     }
 }
 

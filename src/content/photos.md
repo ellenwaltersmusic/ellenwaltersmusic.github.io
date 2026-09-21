@@ -3,3 +3,5 @@
 ---
 
 # Photos
+
+<div id="gallery"></div>
